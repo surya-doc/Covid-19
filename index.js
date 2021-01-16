@@ -22,6 +22,7 @@ app.get('/', (req, res) => {
   var reqTitle = "";
   var updatedTime = "";
   var disArr = [];
+  console.log(disArr);
   var indianArr = [];
   var optionsDistrictWise = {
     'method': 'GET',
@@ -78,7 +79,6 @@ app.get('/', (req, res) => {
   
             }
           }
-        console.log(disArr);
         disArr.push(state);
       }
   
@@ -86,6 +86,7 @@ app.get('/', (req, res) => {
 
   
 
+  console.log(disArr);
 
   
   var optionsStateWise = {
